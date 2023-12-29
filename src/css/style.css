@@ -1,0 +1,321 @@
+:root {
+    --cor-de-fundo: #80808029;
+    --letra-roxa: #5d15d1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+}
+
+span {
+    font-weight: bold;
+}
+
+.tamanho-maximo {
+    max-width: 1024px;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 55px;
+}
+
+.cabecalho figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho figure img {
+    width: 32px;
+    height: 32px;
+}
+
+.cabecalho figure figcaption p {
+    font-size: 24px;
+    color: var(--letra-roxa);
+    margin-left: 10px;
+}
+
+.imagem-formulario {
+    width: 100%;
+    height: auto;
+    background-image: url("../img/bahia.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.formulario {
+    padding: 50px 0;
+    width: 100%;
+}
+
+.titulo-formulario {
+    width: 100%;
+    height: 35px;
+    background-color: var(--letra-roxa);
+}
+
+.titulo-formulario figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-formulario figure img {
+    width: 20px;
+    height: 20px;
+    rotate: -45deg;
+}
+
+.titulo-formulario figure figcaption p {
+    font-size: 14px;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.conteudo-formulario {
+    width: 100%;
+    background-color: #fff;
+    padding: 30px 25px 20px;
+}
+
+.conteudo-formulario h2 {
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+.conteudo-formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo-formulario form label {
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.conteudo-formulario form ul input,
+.dois-formularios .formulario-pequeno input,
+.dois-formularios .formulario-pequeno select {
+    width: 100%;
+    height: 32px;
+    margin: 10px 0;
+    padding: 0 5px;
+}
+
+.dois-formularios {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.formulario-pequeno {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 10px);
+}
+
+.dois-formularios .formulario-pequeno select {
+    padding: 0 3px;
+}
+
+.quartos,
+.preferencias {
+    display: flex;
+    margin: 10px 0;
+}
+
+.quartos .quarto-resposta,
+.preferencias .preferencias-respostas {
+    display: flex;
+    align-items: center;
+    width: 120px;
+}
+
+.quartos .quarto-resposta input,
+.preferencias .preferencias-respostas input {
+    width: 15px;
+    margin-right: 8px;
+}
+
+form button {
+    width: 160px;
+    height: 32px;
+    background-color: var(--letra-roxa);
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    margin-top: 12px;
+}
+
+form button:hover {
+    cursor: pointer;
+}
+
+.ofertas, .anuncios {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    margin-bottom: 0;
+}
+
+.ofertas h2, .anuncios h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.ofertas h3, .anuncios h3 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.ofertas .imagens {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 375px;
+    margin-top: 20px;
+}
+
+.anuncios .container-cards{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.ofertas .imagens .imagem-metade {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.imagem-metade figcaption{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba( 0, 0, 0, 50%);
+    font-size: 17px;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.mini-imagens {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mini-imagens figure {
+    position: relative;
+    margin: 0 6px;
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+}
+
+.mini-imagens figure img,
+.imagem-metade img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+}
+
+.anuncios .container-cards .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.descricao{
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.descricao h4{
+    font-size: 16px;
+}
+
+.descricao p{
+    margin-top: 15px;
+}
+
+footer{
+    margin-top: 32px;
+    background-color: #5d15d1;
+}
+
+.rodape{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.rodape-conteudo{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+.rodape-conteudo h2{
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.rodape-conteudo .informacoes{
+    display: flex;
+    margin: 5px 0;
+}
+
+.rodape-conteudo .informacoes img{
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.rodape-conteudo .informacoes p{
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
